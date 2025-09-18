@@ -4,10 +4,9 @@ public class booleanos {
 
 	public static void main(String[] args) {
 		
-		int i = 3;
+
 		int numeroEntero1=78,numeroEntero2=90;
-		double numeroReal;
-		char caracter;
+
 		boolean iguales;
 		
 		iguales=numeroEntero1==numeroEntero2;
