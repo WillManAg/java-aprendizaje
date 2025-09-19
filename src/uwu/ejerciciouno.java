@@ -25,12 +25,14 @@ public class ejerciciouno {
 		} else if (num1 < num2) {
 			
 			System.out.println(num1 + " es menor que " + num2);
+			
 		} else {
 			
 			System.out.println(num1 + " y " + num2 + " son iguales.");
 		}
 		
 		teclado.close();
+		
 	}
 
 }
