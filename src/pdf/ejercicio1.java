@@ -1,8 +1,8 @@
-package uwu;
+package pdf;
 
 import java.util.Scanner;
 
-public class transformacion {
+public class ejercicio1 {
 
 	public static void main(String[] args) {
 		

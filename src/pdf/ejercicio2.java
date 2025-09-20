@@ -1,8 +1,8 @@
-package uwu;
+package pdf;
 
 import java.util.Scanner;
 
-public class cilindro {
+public class ejercicio2 {
 
 	public static void main(String[] args) {
 
