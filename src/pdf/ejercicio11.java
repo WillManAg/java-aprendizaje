@@ -1,8 +1,8 @@
-package uwu;
+package pdf;
 
 import java.util.Scanner;
 
-public class mayorque {
+public class ejercicio11 {
 
 	public static void main(String[] args) {
 		
@@ -27,13 +27,10 @@ public class mayorque {
 			
 			System.out.println("Los números se han introducido correctamente");
 			
-		} else if ((num1 < num2) && (num2 > num3)) {
+		} else {
 			
-			System.out.println("Mal, debía introducirlos en este orden: " + num1 + num3 + num2);
-
-		} else if ((num1 > num2) && (num2 < num3)) {
+			System.out.println("Debes introducir los números de menos a mayor.");
 			
-			System.out.println("Mal, debía introducirlos en este orden: " + num3 + num2 + num3);
 		}
 
 		teclado.close();
