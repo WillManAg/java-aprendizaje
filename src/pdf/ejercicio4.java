@@ -45,10 +45,6 @@ public class ejercicio4 {
 		
 		System.out.println("Y en Liras Italianas serían: " + resultado);
 		
-		
-
-		
-		
 		teclado.close();
 		
 	}
