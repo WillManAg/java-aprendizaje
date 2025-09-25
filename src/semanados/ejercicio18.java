@@ -8,7 +8,7 @@ public class ejercicio18 {
         // 18º.- Realizar un programa Java que visualice la suma de los 10 primeros números pares.
         
         int total = 0;
-        int numero = 1;
+        int numero = 2;
         int contador = 0;
 
         while (contador < 10) {
@@ -17,7 +17,7 @@ public class ejercicio18 {
                 contador++;        
             }
             
-            numero++;              
+            numero = numero + 2; // numero+=2              
         }
 
         System.out.println("La suma de los 10 primeros pares es: " + total);

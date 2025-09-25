@@ -10,27 +10,24 @@ public class ejercicio20 {
         
         Scanner teclado = new Scanner(System.in);
         
-        int n, total = 0, contador = 0, numero = 1;
+        int n, total = 0, contador = 0, numero = 4;
         
         System.out.println("Cuántos múltiplos de 4 quieres?");
         
         n = teclado.nextInt();
         
         while (contador < n) {
-            
-            if (numero % 4 == 0) {
                 
                 total += numero;
                 
+                System.out.println("Multiplos de 4: " + total);
+                
+                numero+=4;
+                
                 contador++;
                 
-            }
-            
-            numero++;
             
         }
-        
-        System.out.println("La suma de los " + n + " primeros multiplos de 4, es : " + total);
         
         teclado.close();
 
