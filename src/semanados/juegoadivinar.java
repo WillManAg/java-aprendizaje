@@ -8,8 +8,8 @@ public class juegoadivinar {
 		
 		Scanner teclado = new Scanner(System.in);
 		
-		// int numeroAleatorio = (int) (Math.random() * 100 + 1);
-		int numeroAleatorio = 50;
+		int numeroAleatorio = (int) (Math.random() * 100 + 1);
+		// int numeroAleatorio = 50;
 		
 		
 		int contador = 0, numero;
@@ -17,7 +17,7 @@ public class juegoadivinar {
 		System.out.println("Adivina un número entre el 1 y 100");
 		
 		
-		while (contador < 7 ) {
+		while (contador < 8 ) {
 			
 			System.out.println("Introduce un numero");
 			numero = teclado.nextInt();
