@@ -16,7 +16,6 @@ public class juegoadivinar {
 		
 		System.out.println("Adivina un número entre el 1 y 100");
 		
-		
 		while (contador < 7 ) {
 			
 			System.out.println("Introduce un numero");
