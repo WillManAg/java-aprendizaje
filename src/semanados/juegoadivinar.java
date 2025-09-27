@@ -17,7 +17,7 @@ public class juegoadivinar {
 		System.out.println("Adivina un número entre el 1 y 100");
 		
 		
-		while (contador < 8 ) {
+		while (contador < 7 ) {
 			
 			System.out.println("Introduce un numero");
 			numero = teclado.nextInt();
@@ -29,16 +29,17 @@ public class juegoadivinar {
 					 
 				} else if (numero < numeroAleatorio) {
 					
-					System.out.println("El número es mayor");
+					System.out.println("El número que tienes que adivinar, es mayor");
 					contador++;
 				} else if (numero > numeroAleatorio){
-					System.out.println("El número es menor");
+					System.out.println("El número que tienes que adivinar, es menor");
 					contador++;
 				} else {
 					System.out.println("¡FELICIDADES, HAS GANADO!");
 					System.out.println("El número era: " + numeroAleatorio);
-					contador = contador + 50;	
+					contador = 50;	
 				}	
+				
 		
 			if (contador >= 7 && contador <= 40) {
 				
