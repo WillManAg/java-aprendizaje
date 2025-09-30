@@ -26,6 +26,7 @@ public class ejerciciopiramide {
 			lineas++;
 		}
 
+		teclado.close();
 	}
 
 }
