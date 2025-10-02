@@ -21,6 +21,7 @@ public class esprimo {
 			
 			if (numero%i==0) {
 				esPrimo=false;
+				// break;
 			} 
 			
 		}
