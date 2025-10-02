@@ -30,7 +30,6 @@ public class ejercicio64 {
 					
 				}
 
-				
 				if (esPrimo) {
 					System.out.print(i + " ");
 					suma+=1;
