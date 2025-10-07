@@ -2,9 +2,9 @@ package semanacuatro;
 
 public class Bicycle {
 	// caracteristicas
-	public int cadence;
-	public int gear;
-	public int speed;
+	private int cadence;
+	private int gear;
+	private int speed;
 
 
 
@@ -24,10 +24,20 @@ public class Bicycle {
 		speed = 3;
 	}
 	
-	public void setGear (int newValue) {
-		gear = newValue;
-	}
 	
+	
+	public int getSpeed() {
+		return speed;
+	}
+
+	public void setCadence(int cadence) {
+		this.cadence = cadence;
+	}
+
+	public void setGear(int gear) {
+		this.gear = gear;
+	}
+
 	public void applyBrake (int decrement) {
 		speed -= decrement;
 	}
