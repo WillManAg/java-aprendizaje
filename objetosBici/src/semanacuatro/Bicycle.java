@@ -27,8 +27,10 @@ public class Bicycle {
 	
 	
 	public int getSpeed() {
-		return speed;
+		return this.speed;
 	}
+	
+	
 
 	public void setCadence(int cadence) {
 		this.cadence = cadence;
