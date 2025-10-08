@@ -20,7 +20,7 @@ public class Rectangle {
 	}
 	
 	public Rectangle(Point p, int w, int h) {
-		origin = p;
+		origin = new Point(p.getX(), p.getY());
 		width = w;
 		height = h;
 	}
@@ -31,6 +31,10 @@ public class Rectangle {
 		this.origin.move(x, y);
 	}
 	
+	public Point getOrigin() {
+		return origin;
+	}
+
 	public int getArea() {
 		return width * height;
 	}

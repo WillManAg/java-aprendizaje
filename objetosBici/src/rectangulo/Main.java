@@ -11,10 +11,23 @@ public class Main {
 		punto1 = new Point(5,6);
 		rectangulo2 = new Rectangle(punto1,6,7);
 		
-		System.out.println(rectangulo1);
-		System.out.println(rectangulo2);
-		System.out.println(punto1);
-
+		System.out.println("x: "+ punto1.getX());
+		System.out.println("y: "+ punto1.getY());
+		rectangulo2 = new Rectangle(punto1,6,7);
+		
+		punto1.move(0, 0);
+		
+		System.out.println("x: "+ punto1.getX());
+		System.out.println("y: "+ punto1.getY());
+		
+		System.out.println("x: " + rectangulo2.getOrigin().getX());
+		System.out.println("y: " + rectangulo2.getOrigin().getY());
+		
+		rectangulo2.move(1, 1);
+		
+		System.out.println("x: " + rectangulo2.getOrigin().getX());
+		System.out.println("y: " + rectangulo2.getOrigin().getY());
+		
 	}
 
 }
