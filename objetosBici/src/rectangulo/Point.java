@@ -29,8 +29,16 @@ public class Point {
 		public void setY(int y) {
 			this.y = y;
 		}
+
+		@Override
+		public String toString() {
+			return "Point [x=" + x + ", y=" + y + "]";
+		}
 		
-		
+		public void mostrarDatos() {
+			System.out.println("x: " + this.getX());
+			System.out.println("y: " + this.getY());
+		}
 		
 }
 

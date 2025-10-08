@@ -17,8 +17,8 @@ public class Main {
 		
 		punto1.move(0, 0);
 		
-		System.out.println("x: "+ punto1.getX());
-		System.out.println("y: "+ punto1.getY());
+		System.out.println("Punto: "+ punto1);
+		punto1.mostrarDatos();
 		
 		System.out.println("x: " + rectangulo2.getOrigin().getX());
 		System.out.println("y: " + rectangulo2.getOrigin().getY());
