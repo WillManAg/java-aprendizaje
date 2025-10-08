@@ -26,8 +26,9 @@ public class Rectangle {
 	}
 
 	public void move (int x, int y) {
-		origin.x = x;
-		origin.y = y;
+		// origin.x = x;
+		// origin.y = y;
+		this.origin.move(x, y);
 	}
 	
 	public int getArea() {

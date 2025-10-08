@@ -8,4 +8,10 @@ public class Point {
 			x = a;
 			y = b;
 		}
+		
+		public void move (int x, int y) {
+			this.x = x;
+			this.y = y;
+		}
 }
+

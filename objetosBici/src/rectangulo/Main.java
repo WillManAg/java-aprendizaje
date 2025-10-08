@@ -6,9 +6,7 @@ public class Main {
 		
 		Point punto1;
 		Rectangle rectangulo1, rectangulo2;
-		
-		// llamamos al constructor
-		// le pasamos el punto
+
 		rectangulo1 = new Rectangle(new Point (3,4),6,7);
 		punto1 = new Point(5,6);
 		rectangulo2 = new Rectangle(punto1,6,7);
