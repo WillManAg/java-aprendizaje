@@ -13,6 +13,14 @@ public class Main {
 		resultado = pokimon1.combatir(pokimon2);
 		
 		pokimon1.combatir(pokimon2);
+		
+		if (resultado = true) {
+			System.out.println("El pokemon ganador es: pokimon1");
+		} else {
+			
+			System.out.println("El pokemon ganador es: pokimon2");
+			
+		}
 	}
 
 }

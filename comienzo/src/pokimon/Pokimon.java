@@ -52,6 +52,39 @@ public class Pokimon {
 			}
 		}
 		
+		public char girarDerecha() {
+			
+			switch (this.puntoCardinal) {
+			
+			case 'N' : this.puntoCardinal = 'E';
+						break;
+			case 'E' : this.puntoCardinal = 'S';
+						break;
+			case 'S' : this.puntoCardinal = 'O';
+						break;
+			case 'O' : this.puntoCardinal = 'N';
+						break;
+			}
+			return this.puntoCardinal;
+			
+		}
+		
+public char girarIzquierda() {
+			
+			switch (this.puntoCardinal) {
+			
+			case 'N' : this.puntoCardinal = 'O';
+						break;
+			case 'O' : this.puntoCardinal = 'S';
+						break;
+			case 'S' : this.puntoCardinal = 'E';
+						break;
+			case 'E' : this.puntoCardinal = 'N';
+						break;
+			}
+			return this.puntoCardinal;
+			
+		}
 		
 	
 }
