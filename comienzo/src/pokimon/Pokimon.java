@@ -17,6 +17,14 @@ public class Pokimon {
 			this.puntoCardinal='N';
 		}
 		
+		
+		
+		public char getPuntoCardinal() {
+			return puntoCardinal;
+		}
+
+
+
 		public void mostrarDatos() {
 			
 			System.out.println("Puntos vida: " + this.puntosVida);
@@ -69,7 +77,7 @@ public class Pokimon {
 			
 		}
 		
-public char girarIzquierda() {
+		public char girarIzquierda() {
 			
 			switch (this.puntoCardinal) {
 			

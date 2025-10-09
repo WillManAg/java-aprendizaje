@@ -21,6 +21,9 @@ public class Main {
 			System.out.println("El pokemon ganador es: pokimon2");
 			
 		}
+		
+		pokimon1.girarDerecha();
+		System.out.println("Punto cardinal actual: " + pokimon1.getPuntoCardinal());
 	}
 
 }
