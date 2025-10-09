@@ -24,6 +24,21 @@ public class Pokimon {
 		}
 
 
+		public void caminar() {
+			
+			switch (this.puntoCardinal) {
+			
+				case 'N' : this.ubicacion.setY(this.ubicacion.getY() + 1);
+						break;
+				case 'E' : this.ubicacion.setX(this.ubicacion.getX() + 1);
+						break;
+				case 'S' : this.ubicacion.setY(this.ubicacion.getY() - 1);
+						break;
+				case 'O' : this.ubicacion.setX(this.ubicacion.getX() - 1);
+						break;
+			}
+			
+		}
 
 		public void mostrarDatos() {
 			
