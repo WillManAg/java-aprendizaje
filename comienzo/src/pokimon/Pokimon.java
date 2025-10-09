@@ -28,6 +28,30 @@ public class Pokimon {
 			
 		}
 		
+		public boolean combatir(Pokimon rival) {
+			
+			rival.puntosVida-=(this.ataque-rival.defensa);
+			if (rival.puntosVida<=0) {
+				return true;
+			} else {
+				this.puntosVida-=(rival.ataque - this.defensa);
+				
+				if (this.puntosVida<=0) {
+					return false;
+				} else {
+					
+					if(this.puntosVida - rival.puntosVida >= 0) {
+						
+						return true;
+					} else {
+						return false;
+					}
+					
+				}
+				
+			}
+		}
+		
 		
 	
 }
