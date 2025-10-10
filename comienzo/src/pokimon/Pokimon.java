@@ -23,6 +23,11 @@ public class Pokimon {
 			return puntoCardinal;
 		}
 
+		public Punto getUbicacion() {
+			return ubicacion;
+		}
+
+
 
 		public void caminar() {
 			
@@ -38,6 +43,36 @@ public class Pokimon {
 						break;
 			}
 			
+		}
+		
+		public void avanzar(int cantidadAvanzar) {
+			
+			// caminar mucho ocn bucle
+			// for (int i=0; i<cantidadAvanzar; i++) {
+				// this.caminar();
+			// }
+			
+			switch (this.puntoCardinal) {
+			
+			case 'N' : this.ubicacion.setY(this.ubicacion.getY() + cantidadAvanzar);
+					break;
+			case 'E' : this.ubicacion.setX(this.ubicacion.getX() + cantidadAvanzar);
+					break;
+			case 'S' : this.ubicacion.setY(this.ubicacion.getY() - cantidadAvanzar);
+					break;
+			case 'O' : this.ubicacion.setX(this.ubicacion.getX() - cantidadAvanzar);
+					break;
+			}
+			
+		}
+		
+		public void metodoPrueba() {
+			int numero = 1;
+			
+			while (numero >= 0) {
+				metodoPrueba();
+				numero--;
+			}
 		}
 
 		public void mostrarDatos() {

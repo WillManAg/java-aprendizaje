@@ -24,6 +24,14 @@ public class Main {
 		
 		pokimon1.girarDerecha();
 		System.out.println("Punto cardinal actual: " + pokimon1.getPuntoCardinal());
+		
+		pokimon1.caminar();
+		pokimon1.getUbicacion().mostrarDatos();
+		
+		pokimon1.metodoPrueba();
+		
 	}
+	
+		
 
 }
