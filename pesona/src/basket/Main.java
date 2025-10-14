@@ -35,7 +35,15 @@ public class Main {
 			System.out.println("J2 de 3: Falla");
 		}
 
+		for (int i=0; i<1000; i++) {
+			jugador2.entrenarTres();
+		}
 		
+		if (jugador2.lanzarDeTres()) {
+			System.out.println("J2 de 3: Canasta");
+		} else {
+			System.out.println("J2 de 3: Falla");
+		}
 		
 	}
 

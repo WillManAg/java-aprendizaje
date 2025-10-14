@@ -45,5 +45,63 @@ public class Jugador {
 		}
 		
 	}
+	
+	public void entrenarDos() {
+		if (Math.random()<0.5) {
+			this.porcentajeDos+=0.5;
+		}
+	}
+	
+	public void entrenarTres() {
+		if (Math.random()<0.5) {
+			this.porcentajeTres+=0.5;
+		}
+	}
+	
+	public void entrenarDos (int dias) {
+		
+		for (int i=0; i<dias; i++) {
+			
+			this.entrenarDos();
+			
+		}
+		
+	}
+	
+	public void entrenarTres (int dias) {
+		
+		for (int i=0; i<dias; i++) {
+			
+			this.entrenarTres();
+			
+		}
+		
+	}
+
+	public double getAltura() {
+		return altura;
+	}
+
+	public void setAltura(double altura) {
+		this.altura = altura;
+	}
+
+	public double getPorcentajeDos() {
+		return porcentajeDos;
+	}
+
+	public void setPorcentajeDos(double porcentajeDos) {
+		this.porcentajeDos = porcentajeDos;
+	}
+
+	public double getPorcentajeTres() {
+		return porcentajeTres;
+	}
+
+	public void setPorcentajeTres(double porcentajeTres) {
+		this.porcentajeTres = porcentajeTres;
+	}
+	
+	
 
 }
