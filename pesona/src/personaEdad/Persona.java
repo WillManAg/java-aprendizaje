@@ -18,4 +18,19 @@ public class Persona {
 		this.acompañada = true;
 	}
 	
+	public void mostrarDatos() {
+		
+		System.out.println("Edad: " + this.edad);
+		System.out.println("Acompañada: " + this.acompañada);
+	}
+	
+	public boolean esMayorDeEdad() {
+		
+		if (this.edad>=18) {
+			return true;
+		} else {
+			return false;
+		}
+	}
+	
 }
