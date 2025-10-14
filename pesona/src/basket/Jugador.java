@@ -18,7 +18,13 @@ public class Jugador {
 		
 		this.altura = altura;
 		this.porcentajeDos = porcentajeDos;
+		if (this.porcentajeDos>100) {
+			this.porcentajeDos=100;
+		}
 		this.porcentajeTres = porcentajeTres;
+		if (this.porcentajeTres>100) {
+			this.porcentajeTres=100;
+		}
 		
 	}
 	
@@ -49,12 +55,19 @@ public class Jugador {
 	public void entrenarDos() {
 		if (Math.random()<0.5) {
 			this.porcentajeDos+=0.5;
+			if (this.porcentajeDos>100) {
+				this.porcentajeDos=100;
+			}
+			
 		}
 	}
 	
 	public void entrenarTres() {
 		if (Math.random()<0.5) {
 			this.porcentajeTres+=0.5;
+			if (this.porcentajeTres>100) {
+				this.porcentajeTres=100;
+			}
 		}
 	}
 	
@@ -92,6 +105,9 @@ public class Jugador {
 
 	public void setPorcentajeDos(double porcentajeDos) {
 		this.porcentajeDos = porcentajeDos;
+		if (this.porcentajeDos>100) {
+			this.porcentajeDos=100;
+		}
 	}
 
 	public double getPorcentajeTres() {
@@ -100,6 +116,9 @@ public class Jugador {
 
 	public void setPorcentajeTres(double porcentajeTres) {
 		this.porcentajeTres = porcentajeTres;
+		if (this.porcentajeTres>100) {
+			this.porcentajeTres=100;
+		}
 	}
 	
 	
