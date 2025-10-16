@@ -1,4 +1,4 @@
-package nif;
+package nifs;
 
 public class Nif {
 	
@@ -8,15 +8,16 @@ public class Nif {
 
 	public Nif() {
 		this.numero = 0;
-		this.letra = ' ';
+		this.letra=' ';
 	}
+		
 	
 	public Nif(int numero) {
 		this.numero = numero;
 		this.asignarLetra();
 	}
 	
-	private void asignarletra() {
+	private void asignarLetra() {
 		
 		switch(this.numero%this.DIVISOR_LETRAS) {
 			case 0: this.letra= 'T';
@@ -25,9 +26,12 @@ public class Nif {
 			break;
 				// resto de letras hata el 22
 			
-			
 		}
-		
+	}
+	
+
+	public void mostrarDatos() {
+		System.out.println("NIF: " + this.numero + " - " + this.letra);
 	}
 	
 }
