@@ -114,7 +114,27 @@ public class Fecha {
 	}
 	
 	public void anterior() {
-		this.dia++;
+		
+		
+		
+	}
+	
+	public boolean esMayorQue(Fecha otraFecha) {
+		boolean resultado = false;
+		
+		if (this.ano > otraFecha.ano) {
+			resultado = true;
+		} else if (this.ano == otraFecha.ano) {
+			if (this.mes > otraFecha.mes) {
+				resultado = true;
+			} else if (this.mes == otraFecha.mes) {
+				if(this.dia > otraFecha.dia) {
+					resultado=true;
+				}
+			}
+		}
+		return resultado;
+		
 	}
 	
 	
