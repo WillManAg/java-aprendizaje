@@ -2,13 +2,13 @@ package fechas;
 
 public class Fecha {
 	
-	private int dia = 1, mes = 1, ano = 1900;
+	private int dia, mes, ano;
 
 	public Fecha(){
 		
-		this.dia = dia;
-		this.mes = mes;
-		this.ano = ano;
+		this.dia = 1;
+		this.mes = 1;
+		this.ano = 1900;
 	}
 	
 	public Fecha(int dia, int mes, int ano){
@@ -16,8 +16,15 @@ public class Fecha {
 		this.dia = dia;
 		this.mes = mes;
 		this.ano = ano;
+		this.valida();
 		
 	}
+	
+
+	public void mostrarFecha() {
+		System.out.println("Fecha: " + this.dia + "/" + this.mes + "/" + this.ano);
+	}
+	
 	
 	public boolean esBisiesto() {
 		
@@ -29,7 +36,7 @@ public class Fecha {
 		
 	}
 	
-	public int diaMes() {
+	public int diasMes() {
 		
 		int dias = 0;
 		
@@ -69,27 +76,45 @@ public class Fecha {
 	
 	private void valida() {
 		
-		if (!(this.dia >= 1 && this.dia <= 31)) {
-			this.dia = 1;
+		if (!(this.ano >= 1900 && this.ano <= 2050)) {
+			this.ano = 1900;
 		}
 		
 		if (!(this.mes >= 1 && this.mes <= 12)) {
 			this.mes = 1;
 		}
 		
-		if (!(this.ano >= 1900 && this.ano <= 2050)) {
-			this.ano = 1900;
+		if (!(this.dia >= 1 && this.dia <= this.diasMes())) {
+			this.dia = 1;
 		}
 		
 	}
 	
 	public void siguiente() {
-		this.dia+=1;
-		// hay que tener en cuenta que si es 31, tienes que pasar al siguiente mes no el dia
+		if(this.dia<this.diasMes()) {
+			this.dia++;
+		} else {
+			this.dia=1;
+			
+			if (this.mes<12) {
+				this.mes++;
+			} else {
+				this.dia=1;
+				this.mes=1;
+				
+				if(this.ano<2025) {
+					this.ano++;
+				} else {
+					this.ano=1900;
+				}
+				
+			}
+			
+		}
 	}
 	
 	public void anterior() {
-		this.dia-=1;
+		this.dia++;
 	}
 	
 	
