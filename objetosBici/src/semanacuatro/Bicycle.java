@@ -2,26 +2,33 @@ package semanacuatro;
 
 public class Bicycle {
 	// caracteristicas
-	private int cadence;
-	private int gear;
-	private int speed;
+	 private int cadence;
+	    private int gear;
+	    private int speed;
+	    private int id;
+	    private static int numberOfBicycles = 0;
+	        
+	    public Bicycle(int startCadence, int startSpeed, int startGear){
+	        gear = startGear;
+	        cadence = startCadence;
+	        speed = startSpeed;
 
+	        // increment number of Bicycles
+	        // and assign ID number
+	        id = ++numberOfBicycles;
+	    }
 
-
-// el nombre del constructor tiene que ser el mismo que el de la clase
-	public Bicycle (int startCadence, int startSpeed, int startGear) {
-		
-		gear = startGear;
-		cadence =startCadence;
-		speed = startSpeed;
-	
-	}
+	    // new method to return the ID instance variable
+	    public int getID() {
+	        return id;
+	    }
 	
 	public Bicycle()  {
 		
 		cadence = 1;
 		gear = 2;
 		speed = 3;
+		id = ++numberOfBicycles;
 	}
 	
 	

@@ -35,6 +35,12 @@ public class Main {
 		
 		System.out.println(velocidadBicimad);
 		
+		System.out.println("IDs: ");
+		
+		System.out.println(bicicleta1.getID());
+		System.out.println(bicicleta2.getID());
+		System.out.println(bicimad.getID());
+		
 
 		
 
