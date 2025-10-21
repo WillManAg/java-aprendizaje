@@ -31,6 +31,9 @@ public class Bicycle {
 		id = ++numberOfBicycles;
 	}
 	
+	public static int getNumberOfBicycles() {
+	    return numberOfBicycles;
+	}
 	
 	
 	public int getSpeed() {
