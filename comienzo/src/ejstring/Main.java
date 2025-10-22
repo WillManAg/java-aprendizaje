@@ -5,9 +5,10 @@ public class Main {
 
 	public static void main(String[] args) {
 
-		String texto, mayusculas, minusculas, nombre;
+		String texto, mayusculas, minusculas, nombre, nombre1, nombre2, numero1;
 		char primeroMayusculas;
-		char primero;
+		char primero, digito;
+		int contador;
 
 		Scanner teclado = new Scanner(System.in);
 		
@@ -40,10 +41,32 @@ public class Main {
 		}
 		System.out.println();
 		
-		System.out.println("Introduce nombre ");
-		nombre = teclado.next();
-		System.out.println(nombre);
+//		System.out.println("Introduce nombre ");
+//		nombre = teclado.next();
+//		System.out.println(nombre);
 		
+//		System.out.println("Introduce nombre ");
+//		nombre1 = teclado.next();
+//		nombre2 = teclado.next();
+//		
+//		System.out.println("Nombre" + nombre1 + nombre2);
+//		
+		
+		System.out.println("Número");
+		contador = Integer.parseInt(teclado.nextLine());
+		System.out.println("Número");
+		numero1 = teclado.nextLine();
+;		System.out.println("Nombre");
+		nombre = teclado.nextLine();
+		System.out.println(contador + nombre);
+		
+		numero1 = String.valueOf(contador);
+		numero1 = Integer.toString(contador);
+		
+		digito='2';
+		if (digito>='0'&&digito<='9') 
+			
+		if (Character.isDigit(digito))
 		
 		teclado.close();
 	}
